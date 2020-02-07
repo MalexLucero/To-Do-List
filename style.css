@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #e0e5ec;
+    --b-s-top-color: #ffffff;
+    --b-s-bottom-color: #A1AFC3;
+    --primary-text-color: #2a2a2b;
+    --hover-text-color: #252525;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--primary-text-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body, section {
+    background-color: var(--primary-color);
+}
+
+section {
+    padding: 3em;
+    box-shadow: -2px -2px 10px var(--b-s-top-color),
+                2px 2px 3px var(--b-s-bottom-color);
+    border-radius:  3.125em;
+}
+
+li {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+
+
+section h1{
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 3rem;
+}
+
+section h4{
+        text-transform: uppercase;
+        font-size: 1rem;
+}
+
+section ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.icon-wrap{
+    color: var(--primary-color);
+    padding: .1em .35em;
+    border-radius: 70%;
+    transition: box-shadow 300ms ease-in-out,
+                color 300ms ease-in-out,
+                margin 300ms   ease-in-out 100ms;
+}
+
+li:hover .icon-wrap{
+    color: var(--b-s-bottom-color);
+    box-shadow: -1px -1px 2px var(--b-s-top-color),
+                1px 1px 2px var(--b-s-bottom-color);
+    margin-right: 2em;
+}
+
+
+.icon-wrap:hover {
+    background-color: var(--b-s-bottom-color);
+    box-shadow: none;
+}
+
+.icon-wrap:hover i {
+    color: var(--hover-text-color);
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .4em .7em;
+    background-color: var(--primary-color);
+    box-shadow: -1px -1px 1px var(--b-s-top-color),
+                1px 1px 1px var(--b-s-bottom-color);
+    border-radius: 3.125em;
+}
+
+
+.btn:hover, .btn:focus {
+    color: var(--hover-text-color);
+    background-color: var(--b-s-bottom-color);
+    box-shadow: none;
+}
+
+input {
+    padding: .6em .7em;
+    border-radius: 3.125em;
+    margin: 0 2em;
+}
+
+.done {
+    color: var(--b-s-bottom-color);
+    text-decoration: line-through;
+}
+
